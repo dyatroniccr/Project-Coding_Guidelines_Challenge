@@ -8,31 +8,33 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="header"> 
-            <div class="foto-tag">
-                <div class="logo">
-                    <img height="30" src="./src/images/374639.jpg">
+    <!-- Choosing variable names-->
+    function calc(nums) {
+        let total = 0;
+        for (let i = 0; i < nums.length; i++) {
+          if (nums[i] > 0) {
+            total += nums[i];
+          }
+        }
+        return total;
+      }
+      
+      const numbersArray = [1, -2, 3, -4, 5, -6, 7, -8, 9, -10];
+      console.log(calc(numbersArray));
 
-                </div>
-                <div class="brand">
-                    <span>HTML5</span>
-                    <br>
-                    <span>Rigoberto</span> 
-
-                </div>  
-            </div>             
-            <div class="elipsis-menu">
-            
-
-            </div>                
-        </div>
-
-        <div class="image"> 
-            Image
-        </div>
-        <div class="user-interaction"> </div>
-    </div>
+      function sumPositiveNumbers(numbers) {
+        let positiveSum = 0;
+        for (let i = 0; i < numbers.length; i++) {
+          if (numbers[i] > 0) {
+            positiveSum += numbers[i];
+          }
+        }
+        return positiveSum;
+      }
+      ​
+      const numbers = [1, -2, 3, -4, 5, -6, 7, -8, 9, -10];
+      console.log(sumPositiveNumbers(numbers));
+      
     
 </body>
 
